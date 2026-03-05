@@ -5,17 +5,17 @@ const Rest = () => {
   const a = [1, 2, 3, 4];
   const b = [11, 12, 13, 14];
   const c = [...a, ...b];
-  console.log(c);
+  // console.log(c);
 
   const obj = { name: "ReactJs", version: 19.3 };
   const updateObj = { ...obj, version: 20 };
-  console.log(updateObj);
+  // console.log(updateObj);
 
   function sum(...num) {
     return num.reduce((a, b) => a + b, 0);
   }
   const res = sum(1, 2, 3, 4);
-  console.log(res);
+  // console.log(res);
 
   // const user = {
   //   name: "Jhon",
@@ -23,12 +23,12 @@ const Rest = () => {
   //   marks: 85,
   // };
 
-  const { name, ...details } = user;
-  console.log(name);
-  console.log(details);
+  // const { name, ...details } = user;
+  // console.log(name);
+  // console.log(details);
 
   const [user, setUser] = useState({ name: "NodeJs", version: 20 });
-  console.log(user);
+  // console.log(user);
 
   function userUpdate() {
     setUser((prevUser) => ({ ...prevUser, version: 24 }));
@@ -40,7 +40,7 @@ const Rest = () => {
 
   return (
     <div>
-      <h1>Name: {user.name}</h1>
+      {/* <h1>Name: {user.name}</h1> */}
     </div>
   );
 };
