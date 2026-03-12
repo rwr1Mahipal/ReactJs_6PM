@@ -12,19 +12,19 @@ const Map = () => {
 
   return (
     <div>
-      {/* {users.map((user) => (
+      {users.map((user) => (
         <div key={user.id}>
           <h1>Id: {user.id}</h1>
-          <h1>Name: {user.name}</h1>
+          <h1 className="map-h1">Name: {user.name}</h1>
           <h1>Age: {user.age}</h1>
         </div>
-      ))} */}
+      ))}
 
       {users
         .filter((user) => user.age >= 24)
         .map((filterUser) => (
           <div key={filterUser.id}>
-            <h1>Name: {filterUser.name}</h1>
+            <h1 className="text-5xl">Name: {filterUser.name}</h1>
           </div>
         ))}
     </div>
