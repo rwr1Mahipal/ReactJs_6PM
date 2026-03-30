@@ -9,11 +9,13 @@ import Navbar from "./Component/Home/Navbar";
 import Footer from "./Component/Home/Footer";
 import LendingPage from "./Component/Home/LendingPage";
 import Form from "./Component/Form";
+import CallBack from "./Component/CallBack";
+import Memo from "./Component/Memo";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<LendingPage />} />
 
@@ -22,8 +24,10 @@ function App() {
         <Route path="/parent" element={<Parent />} />
         <Route path="/rest" element={<Rest />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/callback" element={<CallBack />} />
+        <Route path="/memo" element={<Memo />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
